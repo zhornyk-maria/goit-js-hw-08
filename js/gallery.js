@@ -99,7 +99,7 @@ container.addEventListener("click", (e) => {
     e.preventDefault();
 
     const instance = basicLightbox.create(
-        `<img src="${e.target.dataset.source}" alt="${e.target.description}">`,
+        `<img src="${e.target.dataset.source}" alt="${e.target.alt}">`,
         {
             onShow: instance => {
                 console.log('ADD LISTENER');
